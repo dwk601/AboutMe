@@ -99,7 +99,21 @@ body {
         margin-bottom: 5rem;
         margin-left: 1rem;
         margin-right: 2rem;
+        font-weight: 750;
     }
+    .books button {
+        background-color: transparent;
+        border: none;
+    }
+    .books button a {
+        color: var(--color-primary);
+        text-decoration: none;
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
+        .books button a:hover {
+            color: var(--color-accent);
+        }
 
     .poem {
         margin-top: 3rem;
