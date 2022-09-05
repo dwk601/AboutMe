@@ -2,7 +2,8 @@
     --color-primary: hsl(180, 5%, 87%);
     --color-secondary: hsl(240, 1%, 60%);
     --color-tertiary: #c9c7c5;
-    --color-accent: #ebaf60;
+    --color-accent: hsl(34, 78%, 65%);
+    --color-accent-secondary: hsl(54, 78%, 65%);
     --color-background: #1e1e20;
     --color-background-shade: hsl(240, 3%, 18%);
     font-size: 12px;
@@ -25,15 +26,37 @@ img {
     }
 
 nav {
-
+    background-color: var(--color-background);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-    .logo-img {
+.logo-img {
         height: 100px;
         width: auto;
         display: flex;
         margin: 0 auto;
     }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .navigation a {
+            color: var(--color-primary);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+        }
+            .navigation a:hover {
+                color: var(--color-accent);
+            }
+        .navigation a.active {
+            color: var(--color-accent);
+        }
+
+    
 
 
 header {
@@ -51,6 +74,7 @@ header {
             border-radius: 2rem;
             filter: drop-shadow(0 0 0.5rem var(--color-background-shade));
             margin: 1rem 0 0 2rem;
+            max-width: 100%;
         }
 
 body {
@@ -64,26 +88,105 @@ body {
 }
 
     .about {
-
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
     }
 
     .books {
-
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
     }
 
     .poem {
-
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
     }
 
     .essay {
-
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
     }
 
     .calendar {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+        margin-right: 2rem;     
 
     }
+        table {
+            border-collapse: collapse;
+            border-spacing:  0;
+            width: 90%;
+            table-layout: fixed;
+        }
+        tr {
+            border: 1px solid var(--color-secondary);
+        }
+        th {
+            border: 1px solid var(--color-secondary);
+            padding: 8px;
+            text-align: center;
+            background-color: var(--color-background-shade);
+            color: var(--color-primary);
+        }
+        td {
+            border: 1px solid var(--color-secondary);
+            padding: 8px;
+            text-align: left;
+            font-weight: 600;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: var(--color-background-shade);
+        }
+        #cs2300 {
+            background-color: var(--color-accent);
+            color: var(--color-background);
+        }
+        #cs1410 {
+            background-color: var(--color-accent-secondary);
+            color: var(--color-background);
+        }
+        #cs2600 {
+            background-color: var(--color-accent-secondary);
+            color: var(--color-background);
+        }
+        #cs2550 {
+            background-color: var(--color-accent);
+            color: var(--color-background);
+        }
 
 
 footer {
-
+    background-color: var(--color-background);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .contact a {
+            color: var(--color-primary);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+        }
+            .contact a:hover {
+                color: var(--color-accent);
+            }
+        .contact a.active {
+            color: var(--color-accent);
+        }
