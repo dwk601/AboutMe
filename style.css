@@ -5,17 +5,26 @@
     --color-accent: hsl(34, 78%, 65%);
     --color-accent-secondary: hsl(54, 78%, 65%);
     --color-background: #1e1e20;
+    --color-background-secondary: #2a2a2e;
     --color-background-shade: hsl(240, 3%, 18%);
     font-size: 12px;
 }
 
 html {
     background-color: var(--color-background);
+    background-attachment: fixed;
     color: var(--color-primary);
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 2;
+}
+
+/* make float-content div float over the background */
+.float-content {
+    background-color: var(--color-background-secondary);
+    position: relative;
+    z-index: 1;
 }
 
 img {
@@ -25,12 +34,17 @@ img {
     margin: 0 auto;
     }
 
+
 nav {
     background-color: var(--color-background);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 80%;
+    top: 0;
 }
 .logo-img {
         height: 100px;
@@ -42,6 +56,7 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 4rem;
     }
         .navigation a {
             color: var(--color-primary);
@@ -64,8 +79,12 @@ header {
     margin-bottom: 10%;
     border-bottom: 5px solid var(--color-secondary);
 }
-
-    
+    .name {
+        text-align: left;
+        margin-left: 2rem;
+        font-family: 'Disko';
+        font-size: 2rem;
+    }
 
         .pictureMe {
             display: flex;
@@ -78,6 +97,7 @@ header {
         }
 
 body {
+    background-color: var(--color-background);
     font-family: Quicksand,-apple-system,BlinkMacSystemFont,Roboto,Oxygen,
     Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     font-size: 1rem;
